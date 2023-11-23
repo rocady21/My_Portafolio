@@ -2,26 +2,167 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+
+.deforme {
+    border-radius: 100px 35px 100px 21px;
+    -moz-border-radius: 100px 35px 100px 21px;
+    -webkit-border-radius: 100px 35px 100px 21px;
+    transform: rotate(0deg);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.infoF {
+    backdrop-filter: blur(1px);
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+
+
+
+
+@media screen and (max-width: 600px)  {
+    body {
+        width: 100%;
+    }
+    .headerMain {
+        width: 100% !important;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 0px;
+    }
+    .info {
+        width: 80%;
+    }
+    .photo {
+        width: 50%;
+    }
+    .CardSpecializate {
+        margin: 20px 0px 20px 0px;
+    }
+    .padreProjects {
+        width: 90% !important;
+        margin: auto;
+    }
+    .portafolios {
+        width: 100% ;
+    }
+    .cardsPortafolio {
+        width: 100%;
+        display: flex  !important;
+        flex-direction: column;
+    }
+    .cardPortafolio {
+        width: 100% !important ;
+    }
+    .cardPortafolio img {
+        width: 100% !important ;
+        
+    }
+    .navBar {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        padding: 10px 20px 10px 20px;
+        animation-name: slidein;
+        animation-duration: 3s;
+        
+
+        
+    }
+      
+    @keyframes slidein {
+        from {
+            margin-left: 100%;
+            
+          }
+        
+          to {
+            margin-left: 0%;
+            
+          }
+    }
+
+    .navBar .navigation {
+        width: 60%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 0px;
+        margin: 0px;
+    }
+    .navBar .navigation p{
+        padding: 0px;
+        margin: 0px;
+    }
+    .navBar .Page {
+        width: 40%;
+        padding: 0px;
+    }
+    .DatosAdicionales {
+        width: 90% !important;
+        margin: auto;
+        margin-bottom: 150px;
+    }
+    .DatosAdicionalesPadre {
+        width: 100% !important;
+        display: flex;
+        flex-direction: column;
+    }
+    .DatosAdicionalesButtons{
+        width: 100%;
+        margin: auto;
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 20px;
+    }
+    .DatosAdicionalesButtons button{
+        width: 33%;
+    }
+    .DatosAdicionalesInfo {
+        width: 100%;
+    }
+    .lenguajes {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr))
+    }
+
+    .footer {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .contactInformation {
+        height: 450px;
+    }
+    .contactMe form {
+        width: 100%;
+    }
+    .contactMe form button {
+        align-self: center;
+        width: 60%;
+    }
+    .verPoryecto {
+        width:90%;
+        font-size: 12px;
+
+    }
+    .verPoryecto .infoF {
+        display: flex;
+        flex-direction: column;
+    }
+    .verPoryecto p {
+        width: 100%;
+    }
+    .verPoryecto .tec {
+        width: 100%;
+        margin-top: 50px;
+    }
+    .verPoryecto .tec .map {
+        display: flex;
+        flex-direction: column;
+        margin-left: 10px;
+    }
+    .verPoryecto .tec h2 {
+        font-weight: bold;
+    }
+
 }
