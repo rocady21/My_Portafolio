@@ -13,7 +13,6 @@ const Navbar = ()=> {
     
     const cambiarAncho = ()=> {
         setWidth(window.innerWidth)
-        console.log("el ancho cambio");
     }
 
     useEffect(()=>{
@@ -35,7 +34,7 @@ const Navbar = ()=> {
             router.push("/")
         }
         window.scroll({
-            top:1150
+            top:1350
         })
     }
 

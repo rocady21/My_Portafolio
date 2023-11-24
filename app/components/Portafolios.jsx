@@ -11,18 +11,22 @@ const Portafolios = ()=> {
     const [scrollPosition,setStateScroll] = useState(0)
 
     const handleScroll = () => {
-        setStateScroll(window.scrollY);
+        if(typeof window !== undefined) {
+            setStateScroll(window.scrollY);
+        }
     };
+    const [width,setWidth] = useState(null)
     
     useEffect(() => {
-        window.addEventListener('scroll', handleScroll);
-        
-        return () => {
-            window.removeEventListener('scroll', handleScroll);
-        };
+        if(typeof window !== undefined) {
+            window.addEventListener('scroll', handleScroll);
+            setWidth(window.innerWidth)
+            return () => {
+                window.removeEventListener('scroll', handleScroll);
+            };
+        }
     }, []);
     
-    const isMobile = window.innerWidth < 600
  
     const [stateVideo,setStateVideo] = useState({
         state:false,
@@ -58,7 +62,7 @@ const Portafolios = ()=> {
             {
                  portafolios.map((portafolio,index)=> {
 
-                    return <div onMouseEnter={()=> ponerVideo(index)} onMouseLeave={()=>quitarVideo(index)} key={index} className={`w-[90%] cardPortafolio my-[50px] m-auto flex flex-col items-center bg-white rounded shadow-xl shadow-gray-800   animate__animated  ${ scrollPosition > 350  && isMobile === false  ? "animate__bounceIn" : isMobile === true && scrollPosition > 1200? "animate__bounceIn" : null }`}>
+                    return <div onMouseEnter={()=> ponerVideo(index)} onMouseLeave={()=>quitarVideo(index)} key={index} className={`w-[90%] cardPortafolio my-[50px] m-auto flex flex-col items-center bg-white rounded shadow-xl shadow-gray-800   animate__animated  ${ scrollPosition > 350  && width < 650  ? "animate__bounceIn" : width < 650 && scrollPosition > 1200? "animate__bounceIn" : null }`}>
                         {stateVideo.state === true && index === stateVideo.index ? <video className="w-full bg-black object-contain h-[250px]" loop controls={false} autoPlay={true} muted>
                             <source className="h-[250px]" src={portafolio.videoCorto} type="video/mp4" />
                         </video> :<img  className="w-full  bg-gray-200 max-h-[250px] w-full h-full min-h-[250px] object-cover transition duration-150 ease-in-out" src={portafolio.portada} alt="" />}
