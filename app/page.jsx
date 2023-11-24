@@ -1,5 +1,4 @@
 "use client"
-import { FaInstagram,FaGithub,FaFacebook,FaLinkedin } from "react-icons/fa";
 import CardSpecializate from "./components/CardSpecializate";
 import Portafolios from "./components/Portafolios";
 import DatosAdicionales from "./components/DatosAdicionales";

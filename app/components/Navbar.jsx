@@ -1,7 +1,6 @@
 "use client"
 import { usePathname, useRouter } from "next/navigation";
 import React, { useEffect, useState } from "react"
-import { GoMoon } from "react-icons/go";
 import { CgDetailsMore } from "react-icons/cg";
 
 

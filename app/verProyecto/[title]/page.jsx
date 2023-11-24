@@ -3,8 +3,7 @@ import { filterPortafolioById } from "@/app/utils/portafolios";
 import { useParams } from "next/navigation";
 import React, { useEffect, useState } from "react";
 import { FaGithub } from "react-icons/fa";
-import { IoIosArrowForward } from "react-icons/io";
-import { TbNumber3Small } from "react-icons/tb";
+
 import Carousel from "react-material-ui-carousel"
 const VerProyecto = () => {
     const { title } = useParams()
@@ -41,7 +40,7 @@ const VerProyecto = () => {
                         })
                     }
                     </Carousel>
-                </div> : <div onMouseEnter={() => sethoverVideo(true)} onMouseLeave={() => sethoverVideo(false)} className="video mt-[50px] w-[80%] m-auto max-h-[450px]  shadow shadow-lg rounded-[10%] ">
+                </div> : <div onMouseEnter={() => sethoverVideo(true)} onMouseLeave={() => sethoverVideo(false)} className="videoVerProyecto mt-[50px] w-[80%] m-auto max-h-[450px]  shadow shadow-lg rounded-[10%] ">
 
                     <video className="w-full rounded bg-black py-5  m-auto max-h-[450px] object-contain" controls={hoverVideo === true ? true : false} autoPlay={false} muted>
                         <source className="w-full h-full object-contain" src={video} type="video/mp4" />
