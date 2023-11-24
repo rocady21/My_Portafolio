@@ -18,7 +18,7 @@
 
 
 
-@media screen and (max-width: 600px)  {
+@media screen and (max-width: 650px)  {
     body {
         width: 100%;
     }
@@ -29,14 +29,21 @@
         align-items: center;
         margin-top: 0px;
     }
+    .infoF h1 {
+        font-size: 15px;
+    }
     .info {
         width: 80%;
+    
     }
     .photo {
         width: 50%;
     }
     .CardSpecializate {
         margin: 20px 0px 20px 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
     .padreProjects {
         width: 90% !important;
@@ -61,25 +68,9 @@
         width: 100%;
         display: flex;
         flex-direction: row;
-        padding: 10px 20px 10px 20px;
-        animation-name: slidein;
-        animation-duration: 3s;
-        
-
-        
+        padding: 10px 20px 10px 20px;    
     }
       
-    @keyframes slidein {
-        from {
-            margin-left: 100%;
-            
-          }
-        
-          to {
-            margin-left: 0%;
-            
-          }
-    }
 
     .navBar .navigation {
         width: 60%;
@@ -141,7 +132,7 @@
         width: 60%;
     }
     .verPoryecto {
-        width:90%;
+        width:100%;
         font-size: 12px;
 
     }
@@ -165,4 +156,88 @@
         font-weight: bold;
     }
 
+    .pelotas1,.pelotas2, .pelotas3 , .pelotas4 {
+        width: 100px;
+        height: 100px;
+    }
+
+    .pelotas1 {
+        width: 150px;
+        height: 150px;
+        bottom: -15%;
+        left: 0;
+    }
+    .pelotas2 {
+        width: 200px;
+        height: 200px;
+        bottom: -20%;
+        left: 40%;
+    }
+    .pelotas3 {
+        width: 250px;
+        height: 250px;
+        bottom: -10%;
+        left: 70%;
+    }
+    .pelotas4 {
+        height: 200px;
+        width: 200px;
+        top: -10%;
+        right: -15%;
+    }
+
+    .newNav {
+        animation-name: AnimarNav;
+        animation-duration: 0.2s;
+    }
+
+    @keyframes AnimarNav {
+        from{
+            width: 0px;
+        }
+        to{
+           width: 190px;
+        }
+    }
+
+}
+
+
+@media screen and (max-width:900px) {
+    .verPoryecto {
+        width: 80%;
+    }
+}
+@media screen and (max-width:800px) {
+    .info {
+        margin-bottom: 50px;
+    }
+    .videoVerProyecto {
+        width: 100% !important;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .info {
+        margin-bottom: 100px;
+    }
+}
+
+@media screen and (max-width:470px) {
+    .info {
+        margin-bottom: 200px;
+    }
+}
+@media screen and (max-width:420px) {
+    .info {
+        margin-bottom: 300px;
+    }
+}
+@media screen and (max-width:350px) {
+    * {
+        font-size: 12px;
+    }
+    .info {
+        margin-bottom: 100px;
+    }
 }

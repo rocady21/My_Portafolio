@@ -24,7 +24,7 @@ const portafolios = [
         videoCorto:"https://firebasestorage.googleapis.com/v0/b/portafolio-7f218.appspot.com/o/resumenes%2FresumeCRM.mp4?alt=media&token=d4633fa2-cc7e-404d-957e-c9eea599950b"
     },
     {
-        titulo:"List Anime GraphQL",
+        titulo:"Animes Graphql",
         descripcion:"En esta App destacada de GraphQL, exploramos una API que ofrece información detallada sobre animes y mangas. Desde tendencias hasta detalles específicos como tráilers, personajes y episodios, esta experiencia optimizada garantiza una inmersión ágil en el fascinante mundo de la animación japonesa. Con un enfoque técnico preciso y atención cuidadosa a la experiencia del usuario, esta demostración representa versatilidad y profundidad en la interacción con datos de animes y mangas.",
         tecnologias:[
             "GraphQL",

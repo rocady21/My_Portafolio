@@ -134,7 +134,7 @@ const Footer = () => {
                             <p>{formik.errors.mensaje}</p>
                         </div> : null}
                     </div>
-                    <input type="submit" value="Enviar Mensaje" id="button" className="w-[40%] self-end mt-5 send Message px-5 py-3 bg-gray-700 font-bold text-white hover:bg-gray-800 shadow shadow-xl"/>
+                    <input type="submit" value="Enviar Mensaje" id="button" className="w-[40%] text-center self-end mt-5 send Message px-5 py-3 bg-gray-700 font-bold text-white hover:bg-gray-800 shadow shadow-xl"/>
 
                 </form>
                 <ToastContainer />

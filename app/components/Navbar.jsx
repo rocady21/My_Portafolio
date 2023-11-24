@@ -1,22 +1,39 @@
 "use client"
-import { useRouter } from "next/navigation";
-import React, { useState } from "react"
+import { usePathname, useRouter } from "next/navigation";
+import React, { useEffect, useState } from "react"
 import { GoMoon } from "react-icons/go";
 import { CgDetailsMore } from "react-icons/cg";
 
 
 const Navbar = ()=> {
-
-    const isMobile = window.innerWidth < 600
-
+    const path = usePathname()
     const router = useRouter()
     const [StateMobileNav,setStateMobileNav] = useState(false)
+    const [width,setWidth] = useState()
+    
+    const cambiarAncho = ()=> {
+        setWidth(window.innerWidth)
+        console.log("el ancho cambio");
+    }
+
+    useEffect(()=>{
+        setWidth(window.innerWidth)
+        window.addEventListener("resize",cambiarAncho)
+
+        return ()=> {
+            window.removeEventListener("resize",cambiarAncho)
+        }
+    },[])
+
 
     const verPortafolio = ()=> {
         router.push("/")
     }
     const verProyectos = ()=> {
         setStateMobileNav(false)
+        if (path !== "/") {
+            router.push("/")
+        }
         window.scroll({
             top:1150
         })
@@ -24,18 +41,27 @@ const Navbar = ()=> {
 
     const verDatos = ()=> {
         setStateMobileNav(false)
+        if (path !== "/") {
+            router.push("/")
+        }
         window.scroll({
             top:2200
         })
     }
     const verServicios = ()=> {
         setStateMobileNav(false)
+        if (path !== "/") {
+            router.push("/")
+        }
         window.scroll({
             top:400
         })
     }
     const Contactame = ()=> {
         setStateMobileNav(false)
+        if (path !== "/") {
+            router.push("/")
+        }
         window.scroll({
             top:3000
         })
@@ -43,11 +69,11 @@ const Navbar = ()=> {
     
     return (
         <div className="">
-            {isMobile === true? <div className="text-white relative">
-                {StateMobileNav === true? <div className={`absolute mb-[25px] px-4  top-[0px] flex flex-col items-start h-screen z-10 bg-black py-1`}>
+            {width < 650? <div className="text-white">
+                {StateMobileNav === true? <div className={`newNav absolute mb-[25px] px-[35px]  top-[0px] flex flex-col items-start h-screen z-[200] bg-black py-2`}>
                     <CgDetailsMore onClick={()=>setStateMobileNav(false)} className="hover:scale-125 text-white self-start " size={35}/>
                     <h1 role="button" onClick={verPortafolio} className="font-serif my-3 ">My <span className="uppercase text-purple-500 tracking-wide">Portfolio</span></h1>
-                    <div className="navigation h-[40%] px-[25px]  w-full text-[20px] flex flex-col items-start text-gray-300 justify-around text-sm">
+                    <div className="navigation h-[40%] px-[25px] py-[25px]  w-full text-[20px] flex flex-col items-start text-gray-300 justify-around text-sm">
                         <p role="button" onClick={verServicios} className="mx-1 my-2">Servicios</p>
                         <p role="button" onClick={verDatos} className="mx-1 my-2">Datos</p>
                         <p role="button" onClick={verProyectos} className="mx-1 my-2">Proyectos</p>
@@ -60,7 +86,7 @@ const Navbar = ()=> {
             <div className="Page w-[10%]">
                 <h1 role="button" onClick={verPortafolio} className="font-serif ">My <span className="uppercase text-purple-500 tracking-wide">Portfolio</span></h1>
             </div>
-            <div className="navigation sm:w-[40%] lg:w-[80%] flex flex-row items-center text-gray-300 justify-around text-sm">
+            <div className="navigation sm:w-[40%] lg:w-[60%]  flex flex-row items-center text-gray-300 justify-around text-sm">
                 <p role="button" onClick={verServicios} className="">Servicios</p>
                 <p role="button" onClick={verDatos} className="">Datos</p>
                 <p role="button" onClick={verProyectos} className="">Proyectos</p>

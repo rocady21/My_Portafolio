@@ -34,10 +34,10 @@ export default function Home() {
     <div className="" style={{fontFamily: "Raleway"}}>
 
       <div className="headerMain w-[70%]  p-4 m-auto mt-[150px] flex md:justify-between sm:flex-col sm:items-start lg:flex-row ">
-        <div className="info mb-[100px] animate__animated animate__bounceInLeft  sm:w-full lg:w-[80%] lg:w-[40%] xl:w-[50%] h-[350px]">
+        <div className="info animate__animated animate__bounceInLeft  sm:w-full lg:w-[50%] xl:w-[60%] 2xl:w-[50%] h-[350px]">
           <p className="text-gray-500"><span className="font-bold text-[25px] w-[50px]">-</span> MY NAME IS</p>
           <h1 className="text-white font-serif  text-[40px]">Rodrigo <span className="text-purple-400">Olivera.</span></h1>
-          <p className="text-gray-300 my-5"> ¡Buenas! Me llamo RodrigO Olivera, tengo 21 años y soy un desarrollador web con una pasión por la creación de experiencias digitales excepcionales e innovadoras. Mis conocimientos abarcan desde el desarrollo front-end hasta soluciones back-end robustas y con diferentes tecnologias. He trabajado en proyectos que van desde sitios web informativos hasta aplicaciones web complejas. Mi enfoque se centra en la eficiencia del código, la usabilidad y la adaptabilidad a las últimas tecnologías. Además de mis habilidades técnicas, tengo una fuerte capacidad para trabajar en equipo.
+          <p className="text-gray-300 my-5"> ¡Buenas! Me llamo Rodrigo Olivera, tengo 21 años y soy un desarrollador web con una pasión por la creación de experiencias digitales excepcionales e innovadoras. Mis conocimientos abarcan desde el desarrollo front-end hasta soluciones back-end robustas y con diferentes tecnologias. He trabajado en proyectos que van desde sitios web informativos hasta aplicaciones web complejas. Mi enfoque se centra en la eficiencia del código, la usabilidad y la adaptabilidad a las últimas tecnologías. Además de mis habilidades técnicas, tengo una fuerte capacidad para trabajar en equipo.
 Te invito a que explores mi portafolio para conocer mis experiencias e habilidades .</p>
         </div>
         <div className="photo sm:w-[250px] md:min-w-[250px] xl:min-w-[300px] sm:self-center lg:w-[30%] xl:w-[20%] sm:h-[300px]   md:h-[250px]  lg:h-[300px] xl:h-[300px] relative ">

@@ -16,9 +16,11 @@ const VerProyecto = () => {
     const [InfoState, setInfoState] = useState("Descripción")
 
 
+
     useEffect(() => {
         const portafolio = filterPortafolioById(title)
         setPortfolio(portafolio)
+
     }, [])
 
     if (portfolio === null) {
@@ -28,10 +30,10 @@ const VerProyecto = () => {
     const { titulo, portada, imagenes,GithubLink, video, videoCorto, descripcion, tecnologias } = portfolio
 
     return (
-        <div className="verPoryecto w-[60%] m-auto mt-[50px] flex flex-col items-center">
+        <div className="verPoryecto w-[60%] m-auto flex flex-col items-center relative">
 
             {
-                imagenes[0] ? <div className="flex flex-row flex-wrap w-[80%] rounded">
+                imagenes[0] ? <div className="flex flex-row flex-wrap w-[80%] mt-[50px] rounded">
                     <Carousel className="w-full">
                     {
                         imagenes.map((img) => {
@@ -39,9 +41,9 @@ const VerProyecto = () => {
                         })
                     }
                     </Carousel>
-                </div> : <div onMouseEnter={() => sethoverVideo(true)} onMouseLeave={() => sethoverVideo(false)} className="video w-[80%] m-auto max-h-[450px]  shadow shadow-lg rounded-[10%] ">
+                </div> : <div onMouseEnter={() => sethoverVideo(true)} onMouseLeave={() => sethoverVideo(false)} className="video mt-[50px] w-[80%] m-auto max-h-[450px]  shadow shadow-lg rounded-[10%] ">
 
-                    <video className="w-full rounded bg-black py-5  m-auto h-[350px] object-contain" controls={hoverVideo === true ? true : false} autoPlay={false} muted>
+                    <video className="w-full rounded bg-black py-5  m-auto max-h-[450px] object-contain" controls={hoverVideo === true ? true : false} autoPlay={false} muted>
                         <source className="w-full h-full object-contain" src={video} type="video/mp4" />
                     </video>
 
@@ -49,7 +51,7 @@ const VerProyecto = () => {
                 }
 
 
-            <div className=" div w-full px-[30px] py-[25px] text-gray-200 rounded-[5%] mt-[50px] bg-gray-900 relative min-h-[600px] mb-[100px] overflow-hidden flex flex-col items-start justify-around">
+            <div className=" div w-full px-[30px] py-[25px] text-gray-200 rounded-[5%] mt-[25px] bg-gray-900 relative min-h-[600px] mb-[100px] overflow-hidden flex flex-col items-start justify-around">
                 <div className="infoF flex flex-col justify-between z-50 ">
                     <h1 className="font-bold w-[80%] text-[25px] uppercase bg-black/40 px-5 py-2"><span className="mr-[50px] border-left border-2 border-white"></span> {titulo}</h1>
                     <p className="w-[80%] align-middle italic text-gray-300 z-9 py-2 px-5 capitalize">{descripcion}</p>
@@ -69,7 +71,7 @@ const VerProyecto = () => {
                 <div className="z-40 absolute pelotas1 bg-purple-300/40 w-[300px] h-[300px] rounded-[100%] left-[-2%] bottom-[-140px]  "></div>
                 <div className="z-30 left-[20%] absolute pelotas2 bg-purple-300/40 w-[350px] h-[350px] rounded-[100%] bottom-[-100px]  "></div>
                 <div className="z-20 left-[47%] absolute pelotas3 bg-purple-300/40 w-[450px] h-[450px] rounded-[100%] bottom-[-140px]  "></div>
-                <div className="z-10 right-[-15%]  absolute pelota4 bg-purple-300/40 w-[650px] h-[650px] rounded-[100%] top-[-10%]  "></div>
+                <div className="z-10 right-[-15%]  absolute pelotas4 bg-purple-300/40 w-[650px] h-[650px] rounded-[100%] top-[-10%]  "></div>
 
             </div>
 

@@ -62,7 +62,7 @@ const Portafolios = ()=> {
                         {stateVideo.state === true && index === stateVideo.index ? <video className="w-full bg-black object-contain h-[250px]" loop controls={false} autoPlay={true} muted>
                             <source className="h-[250px]" src={portafolio.videoCorto} type="video/mp4" />
                         </video> :<img  className="w-full  bg-gray-200 max-h-[250px] w-full h-full min-h-[250px] object-cover transition duration-150 ease-in-out" src={portafolio.portada} alt="" />}
-                        <div className="info w-[85%] text-[16px] py-4 flex flex-col ">
+                        <div className="informacion w-[85%] text-[16px] py-4 flex flex-col ">
                             <h1 className="uppercase text-lg text-black/40 font-bold">{portafolio.titulo}</h1>
                             <p className=" overflow-hidden text-gray-400 truncate ...">{portafolio.descripcion}</p>
                             <button onClick={()=>VerProyecto(portafolio.titulo)} className="self-end bg-purple-400 rounded text-white px-3 py-1 uppercase font-bold hover:bg-purple-600 mt-2">Read More</button>
