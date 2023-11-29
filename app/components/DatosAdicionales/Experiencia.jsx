@@ -5,9 +5,9 @@ const Experiencia = ()=> {
     return (
         <div>
             <div className="exp">
-                    <h1 className="title text-[20px] font-bold">Desarrollador Web Frontend - Familiar</h1>
+                    <h1 className="title text-[20px] font-bold">Desarrollador Web Frontend - Freelancer</h1>
                     <p className="donde mt-1 text-gray-400">San josé de Mayo</p>
-                    <p className="date my-1 text-gray-500">Enero 2023 - Marzo 2023</p>
+                    <p className="date my-1 text-gray-500">2023</p>
 
                     <p className="my-2">Tecnologias:</p>
                     <div className="technology flex flex-row text-[12px]">
