@@ -11,7 +11,7 @@ const DatosAdicionales = ()=> {
     const [state,setState] = useState("Habilidades")
     return (
         <div className="DatosAdicionalesPadre flex flex-row mt-[50px] justify-between ">
-            <div className="DatosAdicionalesButtons bg-black w-[20%]  ">
+            <div className="DatosAdicionalesButtons w-[20%] p-3 ">
                 <button onClick={()=>setState("Habilidades")} className={`uppercase my-2 text-light flex flex-row items-center justify-around p-3 rounded ${state === "Habilidades"? "bg-white text-purple-600 " : ""}`}>
                 Habilidades
                 <IoIosArrowForward className="color-white"/>
