@@ -12,6 +12,7 @@ const Habilidades = ()=> {
                 <p>- Javascript</p>
                 <p>- Visual Basic .NET</p>
                 <p>- React</p>
+                <p>- React Native y Expo</p>
                 <p>- Next</p>
                 <p>- Node js</p>
                 <p>- GrahQL</p>

@@ -122,6 +122,35 @@ const portafolios = [
         video:"https://firebasestorage.googleapis.com/v0/b/portafolio-7f218.appspot.com/o/videos%2FAndroid%20Emulator%20-%20Pixel_XL_API_30_5554%202023-11-20%2010-11-38.mp4?alt=media&token=ee545a1a-fc70-4910-8d4e-70e384d16e22",
         videoCorto:"https://firebasestorage.googleapis.com/v0/b/portafolio-7f218.appspot.com/o/resumenes%2FResumePomodoro.mp4?alt=media&token=c93f46ef-dc9d-4b68-8caa-cc5426946a90"
     },
+    {
+        titulo:"SocialBadge",
+        descripcion:"Hola a todos, Es un placer saludarles. Hoy estoy emocionado de presentarles un primer vistazo a mi nueva aplicación móvil. Antes que nada, permítanme compartirles un poco sobre la idea detrás de ella. SocialBadge es, en esencia, una red social similar a Instagram, pero con un giro único: funciona a través de un sistema de medallas. Estas medallas se obtienen al participar en actividades relacionadas con películas o juegos, como responder preguntas o jugar juegos relacionados con lo que hayas elegido . Estas medallas tienen un gran valor dentro de la red, por supuesto habran diferentes medallas y de diferentes nivel, siendo asi la mas baja Común, la media baja Raro, la Media Especial, la media alta Epica, la mas alta legendaria y la mas rara de todas Mitica. las medallas podran ser intercambiadas o vendidas entre los usuarios. Además, planeo implementar un chat aleatorio que permita a los usuarios conectarse con otros que compartan alguna medalla en comun, manteniendo el anonimato hasta que ambos decidan revelar sus perfiles. ,Por supuesto, también tengo en mente la inclusión de funciones más tradicionales de una red social, como la posibilidad de crear historias y videos cortos (shots), para que los usuarios disfruten de una experiencia completa y no solo se centren en la obtención de medallas. Ahora, hablando de avances concretos, después de un mes y medio de trabajo en solitario en esta aplicación, me complace compartir las funcionalidades que hemos logrado implementar en esta primera etapa: Registro de usuarios,Inicio de sesión,Seguir a otros usuarios,Aceptar o rechazar solicitudes de seguimiento,Eliminar seguidores,Búsqueda de usuarios y visualización de sus perfiles, publicaciones, seguidores y seguidos,Dar Me gusta o comentar publicaciones de otros usuarios, con la posibilidad de ver esta información solo si se es seguidor,Publicar contenido en mi perfil,Borrar publicaciones,Enviar mensajes a otros usuarios en tiempo real,Recibir notificaciones de mensajes mientras se utiliza la aplicación,Eliminar mensajes y chats,Editar mensajes",
+        tecnologias:[
+            "React Native",
+            "MySql",
+            "Expo",
+            "CSS",
+            "Javascript",
+            "axios",
+            "Redux Toolkit",
+            "SqlAlchemy",
+            "Python Flask",
+            "flask_jwt_extended",
+            "flask_socketio",
+            "react-native-async-storage",
+            "Firebase Storage",
+            "expo-image-picker ",
+            "react-native-vector-icons",
+            "toastify-react-native ",
+            "socket.io-client",
+            "expo-permissions",
+        ],
+        GithubLink:"https://github.com/rocady21/SocialApp",
+        imagenes:[],
+        portada:"https://firebasestorage.googleapis.com/v0/b/portafolio-7f218.appspot.com/o/imgs%2FCaptura%20de%20pantalla%202024-02-20%20150539.png?alt=media&token=363aa0b9-f6e0-4d71-aad9-4c6108b301c6",
+        video:"https://firebasestorage.googleapis.com/v0/b/portafolio-7f218.appspot.com/o/resumenes%2FSocialBadge.mp4?alt=media&token=ea9b1a16-c36d-44bb-b4ec-099311dafc4c",
+        videoCorto:"https://firebasestorage.googleapis.com/v0/b/portafolio-7f218.appspot.com/o/resumenes%2Fcorto.mp4?alt=media&token=27e154b8-26f6-49d7-bf4e-f53abec4d114"
+    }
     
     
 ]
